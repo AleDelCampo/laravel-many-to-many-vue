@@ -6,22 +6,12 @@ export default {
         return{
             members:[
                 {
-                    nome: "Andrea",
-                    cognome: "Livornese"
-                },
-                {
-                    nome: "Alberto",
-                    cognome: "Ferri"
-                },
-                {
                     nome: "Alessandro",
                     cognome: "Del Campo"
                 }
             ],
 
-            emails:[
-                "andrealivornese@gmail.com",
-                "falberto99@gmail.com",
+            emails:[,
                 "alessandrodelcampo@gmail.com"
             ],
 
@@ -46,12 +36,12 @@ export default {
 
 
             <div id="footer-title">
-              Mini progetto Boolean classe 118
+              Portfolio di Alessandro Del Campo
             </div>
 
-            <div class="row row-cols-3">
+            <div class="row">
 
-                <div class="col">
+                <div class="col d-flex flex-column align-items-center ">
 
                     <div class="col-title">
                         Members
@@ -59,7 +49,7 @@ export default {
 
                     <div class="components">
                         <ul>
-                            <li v-for="member in members"s>
+                            <li v-for="member in members">
                                 <div class="name">
                                     {{ member.nome }}
                                 </div>
@@ -71,7 +61,7 @@ export default {
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col d-flex flex-column align-items-center">
 
                     <div class="col-title">
                         Contact
@@ -87,7 +77,7 @@ export default {
 
                 </div>
 
-                <div class="col">
+                <div class="col d-flex flex-column align-items-center">
                     <div class="col-title">
                         Social
                     </div>
@@ -107,11 +97,11 @@ export default {
 
         <div class="container py-4">
             <h6 class="text-center mb-3">
-                La creazione di questi progetti sono  principalmente per scopo didattico, utili per la formazione sull'utilizzo delle nuove tecnologie di sviluppo web sotto la supervisione dei tutor di Boolean®. 
+                La creazione di questi progetti sono nati per lo scopo didattico in Boolean®, riportati oggi qui per mostrarli a te!! 
             </h6>
 
             <div id="copyright">
-                Copyright© 2023, Boolean®. In caso di infrazione bisonga pagare millemila soldi in monete d'oro tassati del 2375432% dallo stato italiano.
+                Copyright© 2024, Boolean®.
             </div>
         </div>
 
@@ -125,6 +115,7 @@ export default {
 #footer-title{
     font-size:1.6em;
     font-weight: bold;
+    text-align: center;
 
     margin-bottom: 20px;
 }
@@ -139,9 +130,10 @@ export default {
 ul{
     margin: 0;
     padding: 0;
-
+    
     display: flex;
     flex-direction: column;
+    align-items:center;
     row-gap:5px;
 
     font-size: .8em;
@@ -174,6 +166,7 @@ ul{
     max-width: 200px;
 
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap:10px;
 
@@ -211,5 +204,4 @@ ul{
     font-size: .7em;
     opacity: .8;
 }
-
 </style>
