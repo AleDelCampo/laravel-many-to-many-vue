@@ -31,7 +31,7 @@ export default {
 
 <template>
 
-    <footer class="bg-body-tertiary">
+    <footer class="bg-footer">
         <div class="container py-5">
 
 
@@ -41,7 +41,7 @@ export default {
 
             <div class="row">
 
-                <div class="col d-flex flex-column align-items-center ">
+                <div class="col d-flex flex-column align-items-center">
 
                     <div class="col-title">
                         Members
@@ -52,8 +52,6 @@ export default {
                             <li v-for="member in members">
                                 <div class="name">
                                     {{ member.nome }}
-                                </div>
-                                <div class="last-name">
                                     {{ member.cognome }}
                                 </div>
                             </li>
@@ -69,7 +67,7 @@ export default {
 
                     <div class="emails">
                         <ul>
-                            <li v-for="email in emails">
+                            <li class="fw-bold" v-for="email in emails">
                                 {{ email }}
                             </li>
                         </ul>
@@ -86,14 +84,13 @@ export default {
                         <div v-for="social in socials" class="icon">
                             <i class="fa-brands" :class="social"></i>
                         </div>
-                        
                     </div>
                 </div>
 
             </div>
         </div>
         
-        <hr>
+        <hr style="border-top: 4px solid #fd2dfd;">
 
         <div class="container py-4">
             <h6 class="text-center mb-3">
@@ -111,6 +108,9 @@ export default {
 
 <style lang="scss" scoped>
 
+footer {
+    color: black;
+}
 
 #footer-title{
     font-size:1.6em;
@@ -143,28 +143,24 @@ ul{
 
 .components{
 
-   
-
     li{
-
         display: flex;
         gap:8px;
-        
 
-        a{
-            color:white;
-            text-decoration: none;
+        div {
+            font-weight: bold;
         }
+       
     }
-  
-
 }
 
+.bg-footer {
+    background-color: #f0f3ff;
+}
 
 #social-grid{
 
     max-width: 200px;
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -178,7 +174,7 @@ ul{
         width: 50px;
         height: 50px;
 
-        border:2px solid white;
+        border:2px solid #fd25fd;
 
         font-size:1.3em;
 
@@ -201,6 +197,7 @@ ul{
 
 #copyright{
     text-align: center;
+    font-weight: bold;
     font-size: .7em;
     opacity: .8;
 }

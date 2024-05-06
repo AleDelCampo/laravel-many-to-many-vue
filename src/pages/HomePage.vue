@@ -68,7 +68,7 @@ export default {
 <template>
   <AppJumbo></AppJumbo>
 
-  <div class="container w-75">
+  <div class="container w-75 text-black">
 
     <h1>I miei Progetti:</h1>
 
@@ -77,7 +77,7 @@ export default {
       <ul>
         <li v-for="project in store.filteredProjects" :key="project.slug" class="mb-2">
           {{ project.title }} <router-link :to="{ name: 'single-project', params: { slug: project.slug } }"
-            class="btn btn-outline-info btn-outline">Mostra</router-link>
+            class="btn my-btn">Mostra</router-link>
         </li>
       </ul>
 
@@ -108,9 +108,8 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-  margin-top: 100px;
   padding-top: 20px;
-  border-top: solid 1px gray;
+  border-top: solid 1px #211951;
 
   ul {
     list-style-type: none;
@@ -119,8 +118,8 @@ nav {
 
       padding: 8px;
       text-decoration: none;
-      color: white;
-      transition: all .3s ease;
+      color: black;
+      transition: all .4s ease;
       cursor: pointer;
 
       &:hover,
@@ -130,5 +129,16 @@ nav {
       }
     }
   }
+}
+
+.my-btn {
+  border: 1px solid #fd2bfd;
+  color: #fd2bfd;
+
+  &:hover {
+    background-color: #fd2bfd;
+    color: black;
+  }
+
 }
 </style>

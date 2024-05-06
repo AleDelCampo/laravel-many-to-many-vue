@@ -33,7 +33,7 @@ export default {
 
 <template>
 
-    <header class="bg-body-tertiary">
+    <header class="bg-nav">
         <div class="container">
             <nav class="navbar">
                 <div class="container-fluid d-flex justify-content-between">
@@ -54,9 +54,14 @@ export default {
 </template>
 
 <style lang="scss">
+
+    .bg-nav {
+        background-color: #211951;
+    }
+
     .logo {
         border-radius: 24px;
-        width: 200px;
-        height: 120px;
+        width: 140px;
+        height: 80px;
     }
 </style>

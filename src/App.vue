@@ -33,7 +33,7 @@ export default {
 
  <AppHeader></AppHeader>
 
-  <div class="py-5">
+  <div class="py-5 bg-home">
 
     <router-view></router-view>
 
@@ -44,5 +44,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+ .bg-home {
+    background-color: #836fff;
+  }
 </style>

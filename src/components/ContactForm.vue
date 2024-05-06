@@ -49,7 +49,7 @@ export default {
     </div>
 
     
-    <button type="submit" class="btn btn-primary">Invia!!</button>
+    <button type="submit" class="btn my-btn">Invia!!</button>
 
 </form>
 
@@ -57,4 +57,16 @@ export default {
 
 
 <style lang="scss">
+
+.my-btn {
+    border: 1px solid #fd2bfd;
+    color: #fd2bfd;
+
+    &:hover {
+        background-color: #fd2bfd;
+        color: black;
+    }
+
+}
+
 </style>
